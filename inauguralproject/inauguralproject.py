@@ -14,6 +14,8 @@ class ExchangeEconomyClass:
         # b. endowments
         par.w1A = 0.8
         par.w2A = 0.3
+        par.w1B = 1 - par.w1A
+        par.w2B = 1 - par.w2A
 
     def utility_A(self,x1A,x2A):
         """Calculate utility for consumer A given quantities of goods x1A and x2A."""
@@ -32,8 +34,6 @@ class ExchangeEconomyClass:
 
 
     def demand_B(self,p1):
-        w1B = 1 - self.par.w1A
-        w2B = 1 - self.par.w2A
 
         budget = self.par.w1B * p1 + self.par.w2B
         x1B = (self.par.beta / p1) * budget
