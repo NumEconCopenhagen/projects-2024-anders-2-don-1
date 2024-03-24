@@ -99,6 +99,4 @@ class ExchangeEconomyClass2:
         # Calculate excess demand for both goods
         eps1 = x1A + x1B - 1  # Total endowment for good 1 is 1
         eps2 = x2A + x2B - 1  # Total endowment for good 2 is 1
-        if not(0 <= x1B <= 1) or not(0 <= x2B <= 1) or not(0 <= x1A <= 1) or not(0 <= x2A <= 1):
-            return abs(eps1)*2, abs(eps2)*2
         return eps1, eps2
