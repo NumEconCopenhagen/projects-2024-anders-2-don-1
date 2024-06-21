@@ -1,6 +1,6 @@
 # Model analysis project
 
-Our project is titled **Dynamic shocks in a short-run AS/AD-model** and examines an extended model of the short-run model presented in the course "Macroeconomics II". Our model extends the basic supply shock model by adding stochastic supply shocks and persistence for these shocks in able to capture a glance of naturally occuring business cycles in an economy.
+Our project is titled **Dynamic GARCH portfolio and utility optimization**. We extend the methods and results from the Data project by engaging the portfolio optimization problem using GARCH-modeling and assuming that the investor can exploit new information each period to reallocate his/her assets. From this, we find that the Sharpe-ratio (risk-adjusted return) can be increased relative to the benchmark portfolio (which represents the portfolio derived from the Data project assuming constant volatility over time). We further extend the Capital Asset Pricing model by assuming specific investor preferences and parameters for risk aversion to find a closed solution to the dilemma proposed by CAPM: how much to actually divide ones capital between risky and safe assets.
 
 The **results** of the project can be seen from running [modelproject.ipynb](modelproject.ipynb).
 
@@ -9,6 +9,5 @@ The **results** of the project can be seen from running [modelproject.ipynb](mod
 ``pip install pandas``
 ``pip install numpy``
 ``pip install matplotlib.pyplot``
-``pip install ipywidgets``
+``pip install arch``
 
-Be aware that running the last chuck of code can have a runtime of 10-30 seconds.
